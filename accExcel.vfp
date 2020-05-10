@@ -1,0 +1,12 @@
+<apex:page Controller="accExcelController" contentType="application/vnd.ms-excel#fileNameForExcel.xls" language="en-US" cache="True" >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!showList}" id="accountId" var="a">
+            <apex:column headerValue="Name" value="{!a.Name}"/>
+            <apex:column headerValue="Phone" value="{!a.Phone}"/>
+            <apex:column headerValue="Type" value="{!a.Type}"/>
+            <apex:column headerValue="Rating" value="{!a.Rating}"/> 
+            <apex:column headerValue="Status" value="{!a.Status__c}"/>
+            <apex:column headerValue="Description" value="{!a.Description__c}"/>  
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
