@@ -1,0 +1,6 @@
+public class accExcelController {
+    public list<account> showList = new list<account>([select Id, Name,Phone,Type,Rating,Status__c,Description__c from Account]);
+    Public list<account> getshowList(){
+        return showList;
+    }   
+}
